@@ -16,4 +16,3 @@ while 1
    brick.MoveMotor('B', -50);
  end
 end
-
