@@ -2,7 +2,7 @@ global key;
 InitKeyboard();
  while 1
   brick.MoveMotor('A', -52);
-  brick.MoveMotor('B', -47.25);
+  brick.MoveMotor('B', -48);
   color = brick.ColorCode(1);
   brick.SetColorMode(1, 2);
   touch = brick.TouchPressed(3);
@@ -10,17 +10,17 @@ InitKeyboard();
    if (touch)
       brick.MoveMotor('A', 60);
       brick.MoveMotor('B', 60);
-      pause(0.45);
+      pause(0.5);
       brick.MoveMotor('A', 30.5);
       brick.MoveMotor('B', -28);
-      pause(0.9);
+      pause(0.73);
   end
  
-  if(distance >= 45)
+  if(distance >= 50)
       pause(0.8);
       brick.MoveMotor('A', -30);
       brick.MoveMotor('B', 30);
-      pause(0.9);
+      pause(0.77);
       brick.MoveMotor('A', -52);
   brick.MoveMotor('B', -47.25);
    pause(1.5)   
@@ -163,6 +163,9 @@ InitKeyboard();
     end
    end
   end
+    
+end
+
     
 end
 
